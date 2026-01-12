@@ -1,0 +1,7 @@
+.formGroup{
+    margin-bottom: 10px;
+}
+.formGroup input{
+    padding: 10px;
+    border-radius: 15px;
+}
