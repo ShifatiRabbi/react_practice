@@ -2,6 +2,11 @@ import React from "react";
 import style from "./todo.module.css"
 
 const Todo = (data) => {
+
+    const handleDelete = (todoId) => {
+        data.handleDeleteKey(todoId);
+    }
+
     return (
         <article className={style.todo}>
             <div>
@@ -9,7 +14,9 @@ const Todo = (data) => {
                 <p>{data.todo.desc}</p>
             </div>
             <div>
-                <button className={style.btn}>
+                <button className={style.btn} onClick={() => {
+                    handleDelete(data.todo.id)
+                }}>
                     <i className="fa fa-trash fa-2x"></i>
                 </button>
             </div>
