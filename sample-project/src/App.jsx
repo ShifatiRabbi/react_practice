@@ -1,5 +1,6 @@
 import React from "react";
 import FAQs from "./components/FAQs/FAQs";
+import DataFetch from "./components/HOOK/CustomHooks/DataFetch";
 // import { STATE } from "./STATE";
 // import Conditional_Rendering from "./Conditional_Rendering/index";
 // import RegisterForm from "./components/Form/RegisterForm";
@@ -15,7 +16,8 @@ function App(){
   return(
     <div>
 
-      <FAQs />
+      <DataFetch />
+      {/* <FAQs /> */}
       {/* <StateLifting parentData={data} renderData={renderData} /> */}
       {/* <RegisterForm /> */}
       {/* <STATE /> */}
